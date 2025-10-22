@@ -19,7 +19,7 @@ struct ContentView: View {
                 .onDelete(perform: deleteTimeSetting)
             }
             // 🧭 Titel oben (groß) — wandert beim Scrollen nach oben
-            .navigationTitle("Trainings")
+            .navigationTitle("Intervalls")
             .navigationBarTitleDisplayMode(.large)
             
             // 🧰 Toolbar-Button (oben rechts)
