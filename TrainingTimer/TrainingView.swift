@@ -10,6 +10,9 @@ import Combine
 import SwiftData
 
 struct TrainingView: View {
+    
+    @Environment(\.modelContext) private var context
+    @Bindable var timeSettings: TimeSettings
    
     var body: some View {
         
@@ -17,7 +20,7 @@ struct TrainingView: View {
             Text("Trainiere")
                 .padding()
             
-            Text("Countdown")
+            Text("\(timeSettings.trainingTime)")
                 .font(.largeTitle)
                 .padding()
             
@@ -37,5 +40,5 @@ struct TrainingView: View {
 }
 
 #Preview {
-    TrainingView()
+    //TrainingView()
 }

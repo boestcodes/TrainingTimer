@@ -54,7 +54,8 @@ struct ContentView: View {
             
             // 📍 Neue iOS-17 Navigation
             .navigationDestination(isPresented: $navigate) {
-                TrainingView()
+                //nur zum testen mit festem index
+                TrainingView(timeSettings: timeSettings[0])
             }
         }
     }
